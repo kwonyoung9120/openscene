@@ -37,7 +37,8 @@ def process_one_scene(data_path, out_dir, args):
     point2img_mapper = args.point2img_mapper
     openseg_model = args.openseg_model
     text_emb = args.text_emb
-    cam_locs = ['back', 'back_left', 'back_right', 'front', 'front_left', 'front_right']
+    #cam_locs = ['back', 'back_left', 'back_right', 'front', 'front_left', 'front_right']
+    cam_locs = ['CAM_FRONT', 'CAM_FRONT_RIGHT','CAM_BACK_RIGHT','CAM_BACK','CAM_BACK_LEFT','CAM_FRONT_LEFT']
 
     # load 3D data (point cloud, color and the corresponding labels)
     # Only process points with GT label annotation
